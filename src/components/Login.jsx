@@ -49,7 +49,7 @@ function Login() {
             alert("You are successfully logged in");
             setEmail("");
             setPassword("");
-            navigate("/todoList", { state: { email: email } });
+            navigate("/todolist", { state: { email: email } });
         } catch (error) {
             console.error('Error logging in:', error);
         }
