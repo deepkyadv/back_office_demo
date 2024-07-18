@@ -49,7 +49,8 @@ function Login() {
             alert("You are successfully logged in");
             setEmail("");
             setPassword("");
-            navigate("/todolist", { state: { email: email } });
+            navigate("/todolist/${email}");
+
         } catch (error) {
             console.error('Error logging in:', error);
         }
